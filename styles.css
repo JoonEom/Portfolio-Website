@@ -1,52 +1,75 @@
-*
-{
+*{
+    padding: 0;
     margin: 0;
 }
-.container
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-.section
-{
-    display: flex;
-    height: 200px;
-    width: 100%;
 
-    
-    
+html{
+    background-color: #e1fcad;
+    scroll-behavior: smooth;
+}
+
+h1{
 
 }
-.one
-{
 
-    background-color: #1f2937;
-    color: #f9faf8;
-    align-items: center;
-    justify-content: center;
+p{
 
 }
-.two
-{
-    background-color: white;
-    color: #1f2937;
-    font-size: 36px;
-    font-weight: bold;
+
+a{
+    color: #edfdcd;
 }
-.three
-{
-    background-color: #e5e7eb;
-    color: #1f2937;
-    font-family: 'light italic';
-    font-size: 36px;
-}
-.four
-{
-    background-color: white;
-    color: #1f2937;
-    font-size: 36px;
-    font-weight: bold;
-}
+
+/* navbar */
+    .navbar{
+        display: flex;
+        width: 100%;
+        height: 108px;
+        align-items: center;
+        background-color: #707e56;
+        /* even when scrolling down the page, the navbar will always be there*/
+        position: fixed; 
+        
+    }
+    .navbar-logo{
+        height: 54px;
+        margin-left: 24px;
+        border: 4px solid #e4f0cd;
+        /* makes the logo round*/
+        border-radius: 25%;
+        /* makes the logo rotate back when you exit the hover*/
+        transition: all 2.0s;
+        
+    }
+    .navbar-logo:hover{
+        box-shadow: 5px 5px;
+        /* searched up how to rotate image (dont need to know)*/
+        transform: rotate(360deg);
+        transition: all 2.0s;
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+
+    .navbar-links{
+        display: flex;
+        align-items: center;
+        /* no more bullet points on the list */
+        list-style: none;
+        /* moves the navbar links to the right */
+        margin-left: auto;
+        /* moves the navbar links to the left 12px */
+        margin-right: 12px;
+        flex-wrap:wrap;
+    }
+    /* refers to the (a) inside class navbar-links*/
+    .navbar-links a{
+        /* removes underline */
+        text-decoration: none;
+        display: block;
+        /* gives each individual links some space*/
+        padding: 32px;
+    }
+    .navbar-links a:hover{
+        background-color: #9db079;
+    }
+
