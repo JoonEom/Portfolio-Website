@@ -1,4 +1,3 @@
-Second Odin Project!
+Portfolio Website
 
-Landing Page (Practicing CSS)
-
+Made using HTML and CSS
