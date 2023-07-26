@@ -12,21 +12,21 @@ h1{
     font-family: "Courier New", Courier, monospace;
     font-size: 46px;
     font-weight: 700;
-    color: #edfdcde1;
+    color: #e1fcad;
     text-shadow: 2px 2px black;
 }
 h2{
     font-family: "Courier New", Courier, monospace;
     font-size: 32px;
     font-weight: 700;
-    color: #edfdcd9f;
+    color: #c8dca4;
     text-shadow: 2px 2px black;
 }
 p{
     font-family: "Courier New", Courier, monospace;
     font-size: 20px;
     font-weight: 500;
-    color: #edfdcd5f;
+    color: #d1e0b4;
     text-shadow: 2px 2px black;
     
 }
@@ -58,7 +58,7 @@ a{
         
     }
     .navbar-logo:hover{
-        box-shadow: 5px 5px;
+        
         /* searched up how to rotate image (dont need to know)*/
         transform: rotate(360deg);
         transition: all 2.0s;
@@ -75,7 +75,7 @@ a{
         margin-left: auto;
         /* moves the navbar links to the left 12px */
         margin-right: 12px;
-        flex-wrap:wrap;
+        
     }
     /* refers to the (a) inside class navbar-links*/
     .navbar-links a{
@@ -118,10 +118,16 @@ a{
   }
   .title-img{
     max-width: 300px;
-    border: 15px solid;
+    border: 10px solid;
     box-shadow: 2px 2px;
     /* chat gpt */
     border-image: linear-gradient(to bottom, #edfdcd, #edfdcd27) 1%;
+  }
+  .title-img:hover{
+    transform: rotate(360deg);
+        transition: all 2.0s;
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
   }
   
 
