@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -129,5 +130,11 @@ a{
         -ms-transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
   }
+
+  /* timeline */
+  
+
+
+ 
   
 
