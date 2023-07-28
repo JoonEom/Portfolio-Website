@@ -118,12 +118,13 @@ a{
     padding-left: 32px;
   }
   .title-img{
-    max-width: 300px;
+    max-width: 200px;
     border: 10px solid;
     box-shadow: 2px 2px;
     /* chat gpt */
     border-image: linear-gradient(to bottom, #edfdcd, #edfdcd27) 1%;
     transition: all 2.0s;
+    margin-right: 20px;
   }
   .title-img:hover{
     transform: rotate(360deg);
