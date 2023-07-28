@@ -35,6 +35,7 @@ p{
 a{
     font-family: 'Courier New', Courier, monospace;
     color: #edfdcd;
+    text-decoration: none;
 }
 
 /* navbar */
@@ -46,6 +47,7 @@ a{
         background-color: #707e56;
         /* even when scrolling down the page, the navbar will always be there*/
         position: fixed; 
+        
         
     }
     .navbar-logo{
@@ -91,7 +93,17 @@ a{
     }
 
 /* Title Section */
+.title{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 72px;
+    font-weight: 700;
+    color: #707e56;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
 
+}
 .title-section {
     display: flex;
     justify-content: center;
@@ -123,6 +135,7 @@ a{
     box-shadow: 2px 2px;
     /* chat gpt */
     border-image: linear-gradient(to bottom, #edfdcd, #edfdcd27) 1%;
+    transition: all 2.0s;
   }
   .title-img:hover{
     transform: rotate(360deg);
@@ -131,10 +144,74 @@ a{
         -webkit-transform: rotate(360deg);
   }
 
-  /* timeline */
+/* timeline */
+.timeline-section{
+    margin: 50px;
+}
+.timeline-items{
+    max-width: 1000px;
+    background-color: #e1fcad;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+/*::before is a pseudo-element that allows you to insert content before the content of an element.*/
+.timeline-items::before{
+    /* empty content */
+    content: '';
+    position: absolute;
+    /* building the line */
+    width: 3px; 
+    /* keep changing the height when adding more timeline items */
+    height: 900px;
+    background-color: #707e56;
+    /* sends the line to center */
+    left: 50%;
+
+}
+.timeline-textbox{
+    margin: 40px;
+}
+.timeline-textbox:nth-child(odd){
+    padding-right: 50%;
+    text-align: right;
+}
+.timeline-textbox:nth-child(even){
+    padding-left: 50%;
+    text-align: left;
+}
+.timeline-dot{
+    height: 20px;
+    width: 20px;
+    background-color: #707e56;
+    position: absolute;
+    border-radius: 100%;
+    /* make the dot in the center of the line*/
+    left: calc(50% - 8px);
+
+}
+.timeline-date{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 40px;
+    font-weight: 300;
+    color: #707e56;
+}  
+.timeline-info{
+    background-color: #707e56;
+    border-radius: 10px;
+    padding: 30px;
+}
   
-
-
- 
-  
-
+/* Portfolio Section */
+.portfolio-Section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 72px;
+    
+}
+.portfolio-container{
+    
+}
