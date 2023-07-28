@@ -96,7 +96,6 @@ a{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    margin-top: 100px;
 }
 .title-section {
     display: flex;
@@ -195,19 +194,20 @@ a{
     border-radius: 10px;
     padding: 30px;
 }
-  
+a > .timeline-info:hover{
+    background-color: #465132;
+}
+
 /* Portfolio Section */
 .portfolio-Section{
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 72px;
     
 }
 .portfolio-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     flex-flow: row wrap;
     padding: 0px 24px 96px 24px;
     gap: 100px 50px;
@@ -216,7 +216,6 @@ a{
     background-color: #707e56;
     display:flex;
     justify-content: center;
-    align-items: flex-start;
     width: 350px;
     height: 300px;
     border-radius: 10px;
@@ -227,6 +226,7 @@ a{
 .card:hover{
     height: 500px;
     box-shadow: 2px 2px 10px 2px black;
+    background-color: #465132;
 
 }
 .card-image{
@@ -247,3 +247,25 @@ a{
 }
 
 /* Contacts Section */
+.contact-container{
+    display: flex;
+    justify-content: center;
+    background-color: #707e56;
+   
+}
+.contact-items{
+    display: flex;
+    margin: 50px;
+}
+.contact-icons{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+.contact-icons:hover{
+    box-shadow: 2px 2px 8px 2px black;
+    height: 75px;
+    width: 75px;
+}
