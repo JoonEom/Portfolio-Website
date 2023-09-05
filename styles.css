@@ -125,6 +125,7 @@ a{
     border-image: linear-gradient(to bottom, #edfdcd, #edfdcd27) 1%;
     transition: all 2.0s;
     margin-right: 20px;
+    
   }
   .title-img:hover{
     transform: rotate(360deg);
