@@ -152,7 +152,7 @@ a{
     /* building the line */
     width: 3px; 
     /* keep changing the height when adding more timeline items */
-    height: 700px;
+    height: 800px;
     background-color: #707e56;
     /* sends the line to center */
     left: 50%;
